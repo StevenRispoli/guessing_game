@@ -1,0 +1,250 @@
+p {
+	font-family: "supermolot_light";
+	font-size: 1.25em;
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+	color: inherit;
+	font-family: "supermolot_light";
+}
+
+h1 {
+	text-align: center;
+	font-family: "propaganda";
+	font-size: 3em;
+}
+
+h2 {
+	text-align: left;
+	font-family: "propaganda";
+	font-size: 3em;
+	margin-top: 30px;
+}
+
+.navbar {
+	background-color: #fff;
+	border: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	background-color: #960018;
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: black;
+	font-size: 1.25em;
+	font-family: "propaganda";
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	background-color: white;
+	color: #960018;
+}
+
+.main-logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.main-logo > h1 {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #960018;
+	color: white;
+	font-family: "propaganda";
+	font-size: 3.25em;
+}
+
+#white {
+	background-color: white;
+	color: #960018;
+}
+
+input.inputBox {
+	width: 31%;
+	margin: 10% 1% 4% 1%;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #111;
+	color: #00FF00;
+	font-size: 2em;
+	font-family: monospace;
+	letter-spacing: .1em;
+	text-align: center;
+	border: 2px inset silver;
+	float: left;
+}
+
+input.wrongNumbers {
+	width: 65%;
+	margin: 10% 1% 4% 1%;
+	height: 60px;
+	border-radius: 5px;
+	background-color: red;
+	color: black;
+	font-size: 2em;
+	font-family: monospace;
+	letter-spacing: .1em;
+	text-align: center;
+	border: 2px inset silver;
+	float: left;
+}
+
+.numButton {
+	padding: 0;
+	list-style: none;
+}
+
+.numButton a {
+	background-color: #960018;
+	font-size: 3em;
+	font-weight: bold;
+	color: white;
+	margin: 1%;
+	text-align: center;
+	float: left;
+	width: 31.3333333333%;
+	border-radius: 5px;
+}
+
+.doorLock {
+	margin-bottom: 30px;
+}
+
+.guessStatus {
+	font-size: 2em;
+	margin-top: 10%;
+	text-align: center;
+}
+
+input.submitButton {
+	display: block;
+	font-size: 2em;
+	width: 75%;
+	border: 2px inset silver;
+	border-radius: 5px;
+	background-color: #960018;
+	font-family: "supermolot_light";
+	color: white;
+	margin: 0 auto;
+}
+
+.health, .ammo {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #960018;
+	float: left;
+	margin-right: 5px;
+	margin-top: 7%;
+}
+
+.healthPercent, .rounds{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #960018;
+	background-color: black;
+	border-radius: 5px;
+	text-align: center;
+	padding: 0 3%;
+	margin-top: 7%;
+	
+}
+
+.itemList {
+	list-style-position: outside;
+}
+
+.itemList li{
+	font-size: 1.25em;
+	margin: 10px 0;
+}
+
+.items a img {
+	max-width: 20%;
+	visibility: hidden;
+}
+
+.about a {
+	color: blue;
+}
+
+.about a:hover {
+	text-decoration: underline;
+}
+
+@font-face {
+	font-family: "propaganda";
+	src: url("../fonts/propaganda.ttf");
+}
+
+@font-face {
+	font-family: "supermolot_light";
+	src: url("../fonts/Supermolot Light.otf");
+}
+
+/* iPhone5 media query */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+	input.lockStatus {
+		width: 19.5%;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		margin-left: 20px;
+		margin-top: 60px;
+	}
+
+	.navbar {
+		margin-bottom: 60px;
+	}
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .numButton a {
+    	font-size: 4em;
+    }
+
+    .guessStatus {
+		font-size: 2em;
+		margin-top: 16%;
+	}
+
+	.health, .ammo {
+		font-size: 2em;
+	}
+	
+	.healthPercent, .rounds{
+		font-size: 2em;
+	}
+} 
