@@ -60,12 +60,12 @@ h2 {
 	font-size: 3.25em;
 }
 
-#white {
+.white {
 	background-color: white;
 	color: #960018;
 }
 
-input.inputBox {
+.inputBox {
 	width: 31%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
@@ -80,7 +80,7 @@ input.inputBox {
 	float: left;
 }
 
-input.wrongNumbers {
+.wrongNumbers {
 	width: 65%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
@@ -122,7 +122,19 @@ input.wrongNumbers {
 	text-align: center;
 }
 
-input.submitButton {
+.submitButton {
+	display: block;
+	font-size: 2em;
+	width: 75%;
+	border: 2px inset silver;
+	border-radius: 5px;
+	background-color: #960018;
+	font-family: "supermolot_light";
+	color: white;
+	margin: 0 auto;
+}
+
+.nextLevel {
 	display: block;
 	font-size: 2em;
 	width: 75%;
@@ -167,6 +179,10 @@ input.submitButton {
 .items a img {
 	max-width: 20%;
 	visibility: hidden;
+}
+
+.show {
+	visibility: visible;
 }
 
 .about a {
