@@ -13,23 +13,23 @@ $(document).ready(function(){
 		};
 	}
 
-	$(".1, .2, .3, .4, .5, .6, .7, .8, .9, .0").click(function(event){
+	$("#1, #2, #3, #4, #5, #6, #7, #8, #9, #0").click(function(event){
 		event.stopPropagation();
 		event.preventDefault();
-		userInput = $(this).closest(".doorLock").find(".inputBox").val();
+		userInput = $(this).closest(".doorLock").find("#inputBox").val();
 		if(userInput.length < 3){
-			$(this).closest(".doorLock").find(".inputBox").val($(this).closest(".doorLock").find(".inputBox").val() + this.id);
+			$(this).closest(".doorLock").find("#inputBox").val($(this).closest(".doorLock").find("#inputBox").val() + this.id);
 		}
 	});
 
 	$(".hint").click(function(event){
 		event.stopPropagation();
 		event.preventDefault();
-		$(this).closest(".doorLock").find(".inputBox").val(passCode);
+		$(this).closest(".doorLock").find("#inputBox").val(passCode);
 	});
 
 	$(".submitButton").on("click", function(){
-		userInput = +$(this).closest(".doorLock").find(".inputBox").val();
+		userInput = +$(this).closest(".doorLock").find("#inputBox").val();
 		//console.log(userInput);
 		if(isNaN(userInput) || userInput > 100 || userInput < 1){
 			alert("Please enter a number between 1 and 100.");
@@ -73,7 +73,8 @@ $(document).ready(function(){
 			$(this).closest(".doorLock").find(".submitButton").prop("value", "GO").removeClass("submitButton").addClass("nextLevel").off("click");
 		} else {
 			numGuesses += 1;
-			console.log(userInput);
+			usedNumbers.push(userInput);
+			$(this).closest(".doorLock").find("#wrongNumbers").val(usedNumbers);
 		}
 	});
 	

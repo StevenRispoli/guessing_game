@@ -77,6 +77,7 @@
 		} else {
 			numGuesses += 1;
 			usedNumbers.push(userInput);
+			$(this).closest(".doorLock").find(".wrongNumbers").val(usedNumbers);
 		}
 	});
 	

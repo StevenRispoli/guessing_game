@@ -65,7 +65,7 @@ h2 {
 	color: #960018;
 }
 
-.inputBox {
+#inputBox {
 	width: 31%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
@@ -80,7 +80,7 @@ h2 {
 	float: left;
 }
 
-.wrongNumbers {
+#wrongNumbers {
 	width: 65%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
