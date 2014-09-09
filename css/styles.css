@@ -60,13 +60,13 @@ h2 {
 	font-size: 3.25em;
 }
 
-.white {
+#white {
 	background-color: white;
 	color: #960018;
 }
 
 #inputBox {
-	width: 31%;
+	width: 31.3333333333%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
 	border-radius: 5px;
@@ -80,12 +80,11 @@ h2 {
 	float: left;
 }
 
-#wrongNumbers {
-	width: 65%;
+.wrongNumbers {
+	width: 31.3333333333%;
 	margin: 10% 1% 4% 1%;
 	height: 60px;
 	border-radius: 5px;
-	background-color: red;
 	color: black;
 	font-size: 2em;
 	font-family: monospace;
@@ -93,6 +92,14 @@ h2 {
 	text-align: center;
 	border: 2px inset silver;
 	float: left;
+}
+
+.wrongNumbers.hot{
+	background-color: red;
+}
+
+.wrongNumbers.cold{
+	background-color: blue;
 }
 
 .numButton {
@@ -116,7 +123,7 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.guessStatus {
+#guessStatus {
 	font-size: 2em;
 	margin-top: 10%;
 	text-align: center;
@@ -134,6 +141,15 @@ h2 {
 	margin: 0 auto;
 }
 
+.submitButton.reset {
+	margin: 10% auto 0;
+}
+
+.success {
+	background-color: green !important;
+}
+
+/*may be used in completed project
 .nextLevel {
 	display: block;
 	font-size: 2em;
@@ -144,18 +160,18 @@ h2 {
 	font-family: "supermolot_light";
 	color: white;
 	margin: 0 auto;
-}
+}*/
 
-.health, .ammo {
+#health, #ammo {
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #960018;
 	float: left;
 	margin-right: 5px;
-	margin-top: 7%;
+	margin-top: 10%;
 }
 
-.healthPercent, .rounds{
+#healthPercent, #rounds{
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #960018;
@@ -163,7 +179,7 @@ h2 {
 	border-radius: 5px;
 	text-align: center;
 	padding: 0 3%;
-	margin-top: 7%;
+	margin-top: 10%;
 	
 }
 
@@ -181,9 +197,10 @@ h2 {
 	visibility: hidden;
 }
 
+/*may be used in completed project
 .show {
 	visibility: visible;
-}
+}*/
 
 .about a {
 	color: blue;
@@ -201,13 +218,6 @@ h2 {
 @font-face {
 	font-family: "supermolot_light";
 	src: url("../fonts/Supermolot Light.otf");
-}
-
-/* iPhone5 media query */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
-	input.lockStatus {
-		width: 19.5%;
-	}
 }
 
 @media (min-width: 768px) {
@@ -251,16 +261,16 @@ h2 {
     	font-size: 4em;
     }
 
-    .guessStatus {
+    #guessStatus {
 		font-size: 2em;
-		margin-top: 16%;
+		margin-top: 21%;
 	}
 
-	.health, .ammo {
+	#health, #ammo {
 		font-size: 2em;
 	}
 	
-	.healthPercent, .rounds{
+	#healthPercent, #rounds{
 		font-size: 2em;
 	}
 } 
