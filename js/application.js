@@ -1,6 +1,6 @@
 // Please ignore this file for now.
-//
-//$(document).ready(function(){
+
+// $(document).ready(function(){
 // 	var levelNumber = 1;
 // 	var passCode = Math.floor((Math.random() * 100) + 1);
 // 	var userInput;

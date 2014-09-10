@@ -149,7 +149,7 @@ h2 {
 	background-color: green !important;
 }
 
-/*may be used in completed project
+/*may be used in completed project*/
 .nextLevel {
 	display: block;
 	font-size: 2em;
@@ -160,7 +160,7 @@ h2 {
 	font-family: "supermolot_light";
 	color: white;
 	margin: 0 auto;
-}*/
+}
 
 #health, #ammo {
 	font-size: 1.5em;
